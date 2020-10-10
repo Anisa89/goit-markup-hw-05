@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -21,7 +25,7 @@
       <div class="container">
         <nav class="navigation">
           <a
-            class="logo-link link"
+            class="logo-link link animate__bounceIn"
             href="./index.html"
             aria-label="логотип вэбстудии"
           >
@@ -30,7 +34,7 @@
 
           <ul class="navigation-list list">
             <li class="nav-list-item">
-              <a class="nav-studio-link link" href="./portfolio.html">
+              <a class="nav-studio-link link" href="./index.html">
                 <span class="studio-color">Студия</span>
               </a>
             </li>
@@ -77,7 +81,7 @@
             </h1>
           </div>
           <div class="wraper-button-hero">
-            <button class="button-hero" type="button">
+            <button class="button-hero" type="button" data-modal-open>
               <span class="button-hero-link">Заказать услугу</span>
             </button>
           </div>
@@ -134,6 +138,7 @@
                 width="370"
                 height="294"
               />
+              <div class="describtion-img">Десктопные приложения</div>
             </li>
             <li class="item-services">
               <img
@@ -144,6 +149,7 @@
                 width="370"
                 height="294"
               />
+              <div class="describtion-img">Мобильные приложения</div>
             </li>
             <li class="item-services">
               <img
@@ -153,6 +159,7 @@
                 width="370"
                 height="294"
               />
+              <div class="describtion-img">Дизайнерские решения</div>
             </li>
           </ul>
         </div>
@@ -494,5 +501,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="modal-btn-svg">
+            <use href="../images/sprite.vector.svg.svg#icon-Vectorsvg"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
